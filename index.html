@@ -1,0 +1,170 @@
+<!DOCTYPE HTML>
+<html lang="">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <title>NYSL web app</title>
+    <link rel="apple-touch-icon" href="styles/images/nysl_logo.png">
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <!--Bootstrap styles-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!--my css-->
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+</head>
+
+<body>
+
+    <div class="body">
+
+        <header class="header">
+           <div id="goBackButton" class="go_back hidden"><img src="styles/images/icons/goBack.png" alt="goBack"></div>
+            <div id="loginIcon" class="iconH login"><img src="styles/images/icons/login.png" alt=""><span class="only_landscape log_text">login</span></div>
+            <div id="logoutIcon" class="iconH logout" style="display: none"><img src="styles/images/icons/logout-rounded-filled.png" alt=""><span class="only_landscape log_text">logout</span></div>
+            <h1>NYSL</h1>
+            <img id="logo" class="logo" src="styles/images/nysl_logo.png" alt="NYSLlogo">
+        </header>
+
+        <div id="home-page" class="page">
+            <h2>Your team's next match:</h2>
+            <div class="content">
+                <div id="home-page-teams" class="home-page-teams container">
+
+                </div>
+            </div>
+
+            <div class="only_portrait">
+                <fieldset class="ui-grid-solo">
+                    <div class="ui-block-a"><a id="allgames_btn" class="ui-btn ui-shadow page-button" data-id="all-games-page" data-btn>All Games</a></div>
+                </fieldset>
+                <fieldset class="ui-grid-solo">
+                    <div class="ui-block-a"><a id="allteams-btn" class="ui-btn ui-btn-b ui-shadow page-button" data-id="teams-page" data-btn>Teams Page</a></div>
+                </fieldset>
+            </div>
+
+            <div class="only_landscape">
+                <fieldset class="ui-grid-a">
+                    <div class="ui-block-a"><a id="allgames_btn" class="ui-btn ui-shadow page-button" data-id="all-games-page" data-btn>All Games</a></div>
+                    <div class="ui-block-b"><a id="allteams-btn" class="ui-btn ui-btn-b ui-shadow page-button" data-id="teams-page" data-btn>Teams Page</a></div>
+                </fieldset>
+            </div>
+        </div>
+
+        <div id="locations-page" class="page hidden">
+
+            <div id="dropdown-location">
+                <button id="btn-location">Choose a Team</button>
+            </div>
+
+            <div id="locations-list" class="choose_team_location hidden">
+
+            </div>
+
+            <div id="location-pre-image" class="google_maps_image">
+                <img src="styles/images/googlemaps.png" alt="">
+            </div>
+
+            <div id="map" class="location_map_info hidden">
+
+            </div>
+
+        </div>
+
+        <div id="next-game-page" class="page hidden">
+            <div id="match-page" class="">
+                <div id="teams" class="">
+
+                </div>
+                <div id="when" class="">
+                    <div id="day" class=""></div>
+                    <div id="time" class=""></div>
+                </div>
+            </div>
+        </div>
+
+        <div id="chat-page" class="page hidden">
+            <div id="chat-background" class="chat_background">
+                <button id="login">LOGIN to chat</button>
+                <div id="posts"></div>
+            </div>
+            <div id="typing-zone" class="typing_zone">
+                <input type="text" id="text-input" placeholder="type here" class="type_chat">
+                <button id="send-btn" class="send_button">Send</button>
+            </div>
+
+
+        </div>
+
+        <div id="teams-page" class="page hidden">
+            <div id="all-teams" class="content">
+
+            </div>
+        </div>
+
+        <div id="team-page" class="page hidden">
+            <div id="team-name" class="info_team_name"></div>
+            <div id="info-part" class="info_part">
+                <div id="players-title" class="players_title"><span class="bold">Players:</span></div>
+                <div id="players" class="players"></div>
+            </div>
+            <div id="team-location" class="team_location">
+                <div id="location-title" class="location_title"><span class="bold">Location:</span></div>
+                <a id="location-address" class="location_address location_link"></a>
+                <a id="location-img" class="location_img location_link only_portrait"><img src="styles/images/icons/location-pin-curvy-flat.png" alt=""></a>
+            </div>
+            <div id="logo-part" class="logo_part "></div>
+        </div>
+
+        <div id="all-games-page" class="page hidden">
+            <div id="all-the-games" class="all_the_games">
+
+            </div>
+        </div>
+
+        <div id="footer" class="footer">
+            <a id="a-chat" href="#" data-id="chat-page" data-main=0 data-btn>
+                <div id="chat-icon" class="icon">
+                    <img src="styles/images/icons/chat256x256.png" alt=""><span class="only_landscape btn_text">CHAT</span>
+                </div>
+            </a>
+            <a id="a-home" href="#" data-id="home-page" data-main=0 data-btn>
+                <div id="home-icon" class="icon">
+                    <img src="styles/images/icons/home256x256.png" alt=""><span class="only_landscape btn_text">HOME</span>
+                </div>
+            </a>
+            <a id="a-location" href="#" data-id="locations-page" data-main=0 data-btn>
+                <div id="location-icon" class="icon">
+                    <img src="styles/images/icons/location256x256.png" alt=""><span class="only_landscape btn_text">LOC.</span>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
+
+    <!--firebase-->
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyDmHaOgkrjEqeU9SlEaOI9SBxrGGibm-C8",
+            authDomain: "first-project-fa4cc.firebaseapp.com",
+            databaseURL: "https://first-project-fa4cc.firebaseio.com",
+            projectId: "first-project-fa4cc",
+            storageBucket: "first-project-fa4cc.appspot.com",
+            messagingSenderId: "1029952978648"
+        };
+        firebase.initializeApp(config);
+    </script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
+
+
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <script src="js/data.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

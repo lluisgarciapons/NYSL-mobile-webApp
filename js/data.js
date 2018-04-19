@@ -1,0 +1,308 @@
+var data = {
+    "matches": [
+        {
+            "date": {
+                "month": "September",
+                "day_num": "1",
+                "day_name": "Saturday",
+                "time": "9:30"
+            },
+            "team_home": "Martorell",
+            "team_away": "Chelsea"
+        },
+        {
+            "date": {
+                "month": "September",
+                "day_num": "1",
+                "day_name": "Saturday",
+                "time": "13:00"
+            },
+            "team_home": "Barça",
+            "team_away": "Madrid"
+        },
+        {
+            "date": {
+                "month": "September",
+                "day_num": "8",
+                "day_name": "Saturday",
+                "time": "9:30"
+            },
+            "team_home": "Madrid",
+            "team_away": "Liverpool"
+        },
+        {
+            "date": {
+                "month": "September",
+                "day_num": "9",
+                "day_name": "Sunday",
+                "time": "13:00"
+            },
+            "team_home": "Liverpool",
+            "team_away": "Martorell"
+        },
+        {
+            "date": {
+                "month": "September",
+                "day_num": "15",
+                "day_name": "Saturday",
+                "time": "9:30"
+            },
+            "team_home": "Sallent",
+            "team_away": "Chelsea"
+        },
+        {
+            "date": {
+                "month": "September",
+                "day_num": "15",
+                "day_name": "Saturday",
+                "time": "13:00"
+            },
+            "team_home": "Barça",
+            "team_away": "Madrid"
+        },
+        {
+            "date": {
+                "month": "September",
+                "day_num": "22",
+                "day_name": "Saturday",
+                "time": "9:30"
+            },
+            "team_home": "Martorell",
+            "team_away": "Barça"
+        },
+        {
+            "date": {
+                "month": "September",
+                "day_num": "22",
+                "day_name": "Saturday",
+                "time": "13:00"
+            },
+            "team_home": "Sallent",
+            "team_away": "Liverpool"
+        },
+        {
+            "date": {
+                "month": "September",
+                "day_num": "29",
+                "day_name": "Saturday",
+                "time": "9:30"
+            },
+            "team_home": "Chelsea",
+            "team_away": "Madrid"
+        },
+        {
+            "date": {
+                "month": "October",
+                "day_num": "6",
+                "day_name": "Saturday",
+                "time": "9:30"
+            },
+            "team_home": "Sallent",
+            "team_away": "Madrid"
+        },
+        {
+            "date": {
+                "month": "October",
+                "day_num": "6",
+                "day_name": "Saturday",
+                "time": "13:00"
+            },
+            "team_home": "Martorell",
+            "team_away": "Liverpool"
+        },
+        {
+            "date": {
+                "month": "October",
+                "day_num": "13",
+                "day_name": "Saturday",
+                "time": "9:30"
+            },
+            "team_home": "Barça",
+            "team_away": "Chelsea"
+        },
+        {
+            "date": {
+                "month": "October",
+                "day_num": "13",
+                "day_name": "Saturday",
+                "time": "13:00"
+            },
+            "team_home": "Madrid",
+            "team_away": "Martorell"
+        },
+        {
+            "date": {
+                "month": "October",
+                "day_num": "20",
+                "day_name": "Saturday",
+                "time": "9:30"
+            },
+            "team_home": "Liverpool",
+            "team_away": "Barça"
+        },
+        {
+            "date": {
+                "month": "October",
+                "day_num": "20",
+                "day_name": "Saturday",
+                "time": "13:00"
+            },
+            "team_home": "Sallent",
+            "team_away": "Chelsea"
+        },
+        {
+            "date": {
+                "month": "October",
+                "day_num": "27",
+                "day_name": "Saturday",
+                "time": "9:30"
+            },
+            "team_home": "Barça",
+            "team_away": "Martorell"
+        },
+        {
+            "date": {
+                "month": "October",
+                "day_num": "27",
+                "day_name": "Saturday",
+                "time": "13:00"
+            },
+            "team_home": "Madrid",
+            "team_away": "Liverpool"
+        },
+    ],
+
+    "teams": { 
+        "Martorell": {
+            "abbr": "MAR",
+            "full_name": "C.F. Martorell",
+            "players": [
+                "Andreu 1",
+                "Oriol 1",
+                "Josep 1",
+                "Lluis 1",
+                "Marc 1",
+                "Francesc 1",
+                "Jordi 1",
+                "Carles 1"
+            ],
+            "location": {
+                "stadium": "Complex Esportiu Torrent de Llops",
+                "address": "Carrer Josep Vilar, 08760 Martorell, Barcelona",
+                "url": "https://goo.gl/maps/F5cNtA3H9YG2",
+                "iframe": 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2988.969358542218!2d1.9147225!3d41.483264000000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a48eca1fe966db%3A0xdba4266d3beed519!2sComplex+Esportiu+Torrent+de+Llops!5e0!3m2!1sen!2ses!4v1522750713171'
+            },
+            "badge": "styles/images/badges/cfmartorell.png"
+        },
+        
+        "Sallent": {
+            "abbr": "SAL",
+            "full_name": "C.E. Sallent",
+            "players": [
+                "Andreu 2",
+                "Oriol 2",
+                "Josep 2",
+                "Lluis 2",
+                "Marc 2",
+                "Francesc 2",
+                "Jordi 2",
+                "Carles 2"
+            ],
+            "location": {
+                "stadium": "Municipal Sallent",
+                "address": "Camí del Pal, 6, 08650 Sallent, Barcelona",
+                "url": "https://goo.gl/maps/W29xW8M3JcK2",
+                "iframe": 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11891.86733362524!2d1.8861297652832034!3d41.829012314589406!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xa786f721d1e647dc!2sCENTRE+D&#39;ESPORTS+SALLENT+F.C.!5e0!3m2!1sen!2ses!4v1522749359393'
+            },
+            "badge": "styles/images/badges/cesallent.png"
+        },
+        
+        "Barça": {
+            "abbr": "FCB",
+            "full_name": "F.C. Barcelona",
+            "players": [
+                "Andreu 3",
+                "Oriol 3",
+                "Josep 3",
+                "Lluis 3",
+                "Marc 3",
+                "Francesc 3",
+                "Jordi 3",
+                "Carles 3"
+            ],
+            "location": {
+                "stadium": "Camp Nou",
+                "address": "C. d'Aristides Maillol, 12, 08028 Barcelona",
+                "url": "https://goo.gl/maps/yYgqj4zETxu",
+                "iframe": 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2993.6864752467936!2d2.1228198!3d41.380896!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a498f576297baf%3A0x44f65330fe1b04b9!2sCamp+Nou!5e0!3m2!1sen!2ses!4v1522750804284'
+            },
+            "badge": "styles/images/badges/FC_Barcelona_escut.png"
+        },
+        
+        "Chelsea": {
+            "abbr": "CHL",
+            "full_name": "Chelsea F.C.",
+            "players": [
+                "Andreu 4",
+                "Oriol 4",
+                "Josep 4",
+                "Lluis 4",
+                "Marc 4",
+                "Francesc 4",
+                "Jordi 4",
+                "Carles 4"
+            ],
+            "location": {
+                "stadium": "Stamford Bridge",
+                "address": "Fulham Rd, Fulham, London SW6 1HS, UK",
+                "url": "https://goo.gl/maps/zXAtR451vNk",
+                "iframe": 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2484.7194914170896!2d-0.19095650000000003!3d51.481663!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48760f864b976f3d%3A0x48aa38781ea565f8!2sStamford+Bridge!5e0!3m2!1sen!2ses!4v1522750860074'
+            },
+            "badge": "styles/images/badges/Chelsea_FC_logo.png"
+        },
+        
+        "Madrid": {
+            "abbr": "RMA",
+            "full_name": "Real Madrid",
+            "players": [
+                "Andreu 5",
+                "Oriol 5",
+                "Josep 5",
+                "Lluis 5",
+                "Marc 5",
+                "Francesc 5",
+                "Jordi 5",
+                "Carles 5"
+            ],
+            "location": {
+                "stadium": "Santiago Bernabéu",
+                "address": "Av. de Concha Espina, 1, 28036 Madrid",
+                "url": "https://goo.gl/maps/ytrbFFiM9dN2",
+                "iframe": 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3036.00374418862!2d-3.6883445!3d40.453054099999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4228e23705d39f%3A0xa8fff6d26e2b1988!2sSantiago+Bernab%C3%A9u+Stadium!5e0!3m2!1sen!2ses!4v1522750918954'
+            },
+            "badge": "styles/images/badges/realMadrid.png"
+        },
+        
+        "Liverpool": {
+            "abbr": "LIV",
+            "full_name": "Liverpool F.C.",
+            "players": [
+                "Andreu 6",
+                "Oriol 6",
+                "Josep 6",
+                "Lluis 6",
+                "Marc 6",
+                "Francesc 6",
+                "Jordi 6",
+                "Carles 6"
+            ],
+            "location": {
+                "stadium": "Anfield",
+                "address": "Anfield Rd, Liverpool L4 0TH, UK",
+                "url": "https://goo.gl/maps/gXzhwCBrmBk",
+                "iframe": 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2377.105080575451!2d-2.9608299999999996!3d53.43082939999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487b21654b02538b%3A0x84576a57e21973ff!2sAnfield!5e0!3m2!1sen!2ses!4v1522750965052'
+            },
+            "badge": "styles/images/badges/LiverpoolFC.png"
+        },
+    }
+}
